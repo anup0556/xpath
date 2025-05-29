@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XPath Test Page</title>
+</head>
+<body>
+
+  <!-- Contains -->
+  <div class="box-container">Hello World</div>
+  <p id="para1" class="content-class">This is a sample paragraph with value123 inside.</p>
+
+  <!-- Equals -->
+  <input type="text" id="input1" name="username" class="input-field" placeholder="Enter your name">
+  <input type="password" id="input2" name="password" class="input-field" placeholder="Enter password">
+  <button type="submit" class="submit-btn" name="submitButton" onclick="alert('Good Job')">Submit</button>
+
+  <!-- Starts-with -->
+  <div id="start-div" class="start-class">Start of something</div>
+  <span class="start-span">Starts with Span</span>
+  <p id="start-para">Starting paragraph</p>
+
+  <!-- Logical operators -->
+  <input type="text" name="searchBox" id="search" class="search-box" value="search here">
+  <div class="data-box" data-type="active" data-status="true">Active Data</div>
+
+  <!-- Axes -->
+  <div id="parent">
+    Parent Div
+    <div id="child">
+      Child Div
+      <p id="descendant">Descendant Paragraph</p>
+    </div>
+    <p id="sibling1">First Sibling</p>
+    <p id="sibling2">Second Sibling</p>
+  </div>
+
+  <!-- Positional -->
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <!-- Wildcard -->
+  <section data-role="container" class="wildcard-section">Wildcard Section</section>
+  <div data-custom="custom1">Custom Attribute Div</div>
+
+  <!-- Not -->
+  <div class="visible" id="shown">Visible Div</div>
+  <div class="hidden">Hidden Div</div>
+
+</body>
+</html>
